@@ -1,0 +1,106 @@
+:root {
+  color: #202020;
+  background: #f6f5f3;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+main {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: minmax(255px, 42vh) 1fr;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 28px;
+  color: #5d5d5d;
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 8.2vw, 7rem);
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 0.9;
+}
+
+.profile {
+  display: grid;
+  place-items: center;
+  padding: 80px 24px;
+  background: #fff;
+}
+
+.profile-content {
+  max-width: 970px;
+  text-align: center;
+}
+
+.statement {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.1rem, 5vw, 4.65rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+}
+
+.statement span {
+  color: #b1b1b1;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.55em;
+  padding: 0 0.08em;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 42px;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
+  font-family: "DM Mono", monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  padding-bottom: 5px;
+  text-decoration: none;
+  transition: opacity 160ms ease;
+}
+
+.email:hover,
+.email:focus-visible {
+  opacity: 0.55;
+}
+
+@media (max-width: 580px) {
+  main {
+    grid-template-rows: minmax(230px, 34svh) 1fr;
+  }
+
+  .statement span {
+    display: none;
+  }
+
+  .statement {
+    line-height: 1.14;
+  }
+}
