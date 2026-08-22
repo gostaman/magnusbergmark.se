@@ -57,6 +57,16 @@ h1 {
   text-align: center;
 }
 
+.profile-photo {
+  display: block;
+  width: min(260px, 70vw);
+  aspect-ratio: 1;
+  margin: 0 auto 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
 .statement {
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
