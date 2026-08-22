@@ -73,11 +73,14 @@ h1 {
   padding: 0 0.08em;
 }
 
-.email {
+.contact {
   display: inline-block;
   margin-top: 42px;
+  border: 0;
   border-bottom: 1px solid currentColor;
+  background: transparent;
   color: inherit;
+  cursor: pointer;
   font-family: "DM Mono", monospace;
   font-size: 0.82rem;
   letter-spacing: 0.02em;
@@ -86,8 +89,8 @@ h1 {
   transition: opacity 160ms ease;
 }
 
-.email:hover,
-.email:focus-visible {
+.contact:hover,
+.contact:focus-visible {
   opacity: 0.55;
 }
 

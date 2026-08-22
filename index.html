@@ -28,9 +28,20 @@
           <p class="statement">
             Digital Product &amp; Strategy Executive
           </p>
-          <a class="email" href="mailto:magnus@bergmark.se">magnus@bergmark.se</a>
+          <button class="contact" id="contact-button" type="button">
+            Contact
+          </button>
         </div>
       </section>
     </main>
+    <script>
+      const contactButton = document.querySelector("#contact-button");
+
+      contactButton.addEventListener("click", () => {
+        const user = "magnus";
+        const domain = "bergmark.se";
+        window.location.href = `mailto:${user}@${domain}`;
+      });
+    </script>
   </body>
 </html>
