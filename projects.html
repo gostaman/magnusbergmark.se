@@ -84,7 +84,7 @@
 
             <article class="project-feature" id="spotify">
                 <div class="project-media video-media">
-                    <video autoplay muted loop playsinline preload="metadata" aria-label="Spotify artwork LED display">
+                    <video autoplay loop muted playsinline preload="auto" aria-label="Spotify artwork LED display">
                         <source src="images/spotify-display.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -147,6 +147,15 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.querySelectorAll('video[autoplay]').forEach((video) => {
+        video.muted = true;
+        video.play().catch(() => {
+            video.addEventListener('canplay', () => video.play().catch(() => {}), { once: true });
+        });
+    });
+</script>
 
 </body>
 </html>
