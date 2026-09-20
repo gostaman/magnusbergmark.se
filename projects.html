@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things I Build | Magnus Bergmark</title>
+    <meta name="description" content="Personal projects by Magnus Bergmark — electronics, software, audio, CAD and 3D printing.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+        <a class="logo" href="index.html">MAGNUS BERGMARK</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html#story">Story</a>
+            <a href="index.html#career">Career</a>
+            <a href="index.html#about">About</a>
+            <a href="projects.html">Things I build</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="projects-hero">
+        <div class="container">
+            <p class="eyebrow">Outside work</p>
+            <h1>Things<br>I build.</h1>
+            <p class="projects-intro">
+                I like figuring out how things work — and then building
+                something myself.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-list">
+        <div class="container">
+
+            <article class="project-feature" id="deskradar">
+                <div class="project-media">
+                    <img src="images/deskradar-finished.jpg" alt="DeskRadar flight radar on a desk">
+                </div>
+                <div class="project-copy">
+                    <p class="project-type">Electronics · Software · 3D printing</p>
+                    <h2>DeskRadar</h2>
+                    <p class="project-lead">
+                        A tiny flight radar for my desk.
+                    </p>
+                    <p>
+                        I wanted a small physical display showing aircraft around me,
+                        so I built one around an ESP32, a small TFT display and OpenSky
+                        flight data. The enclosure was designed and 3D printed for the project.
+                    </p>
+                    <p class="project-tech">ESP32 · OpenSky · TFT · Arduino · CAD</p>
+                </div>
+            </article>
+
+            <article class="project-feature project-reverse" id="speakers">
+                <div class="project-media project-media-stack">
+                    <img src="images/speakers-finished.jpg" alt="Hand-built speakers, finished">
+                    <img class="secondary-image" src="images/speakers-build.jpg" alt="Building the hand-built speakers">
+                </div>
+                <div class="project-copy">
+                    <p class="project-type">Audio · Making · Electronics</p>
+                    <h2>Speakers</h2>
+                    <p class="project-lead">
+                        A pair of speakers built from scratch.
+                    </p>
+                    <p>
+                        A project combining cabinet construction, electronics and audio
+                        experimentation. The visual expression was deliberately as loud
+                        as the speakers themselves.
+                    </p>
+                    <p class="project-tech">Speaker design · Electronics · Woodworking</p>
+                </div>
+            </article>
+
+            <article class="project-feature" id="spotify">
+                <div class="project-media video-media">
+                    <video autoplay muted loop playsinline preload="metadata" aria-label="Spotify artwork LED display">
+                        <source src="images/spotify-display.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-copy">
+                    <p class="project-type">Software · Electronics · Music</p>
+                    <h2>Spotify artwork display</h2>
+                    <p class="project-lead">
+                        Album artwork, turned into a physical object.
+                    </p>
+                    <p>
+                        A small LED display that shows the artwork of whatever is
+                        currently playing on Spotify. The short film loops silently
+                        because the LED refresh interacts with a camera shutter in still photos.
+                    </p>
+                    <p class="project-tech">Raspberry Pi · Python · LED matrix · Spotify</p>
+                </div>
+            </article>
+
+            <article class="project-feature project-reverse" id="crocs">
+                <div class="project-media project-media-stack">
+                    <img src="images/crocs-finished.jpg" alt="3D printed Crocs being worn">
+                    <img class="secondary-image" src="images/crocs-printing.jpg" alt="3D printed Croc being printed in a Bambu Lab printer">
+                </div>
+                <div class="project-copy">
+                    <p class="project-type">3D printing · CAD</p>
+                    <h2>3D printed Crocs</h2>
+                    <p class="project-lead">
+                        Designing something that probably didn't need to be 3D printed.
+                    </p>
+                    <p>
+                        One of the more playful projects: designing and printing a pair
+                        of Crocs on a Bambu Lab P1S. The challenge was getting the geometry,
+                        flexibility and printability to work together.
+                    </p>
+                    <p class="project-tech">CAD · Bambu Lab P1S · 3D printing</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="projects-end">
+        <div class="container">
+            <p class="section-label">More to come</p>
+            <p>
+                There are usually a few more half-finished ideas somewhere in the workshop.
+            </p>
+            <a class="text-link" href="index.html">← Back to Magnus Bergmark</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <span>© 2026 Magnus Bergmark</span>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="https://www.linkedin.com/in/magnusbergmark/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#">↑</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
